@@ -28,7 +28,7 @@ my %module_build_args = (
     'Alan Young <harleypig@gmail.com>'
   ],
   'dist_name' => 'PPIx-IndexLines',
-  'dist_version' => '0.03',
+  'dist_version' => '0.04',
   'license' => 'perl',
   'module_name' => 'PPIx::IndexLines',
   'recommends' => {},

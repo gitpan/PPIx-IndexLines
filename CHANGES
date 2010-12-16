@@ -1,6 +1,14 @@
 Revision History for PPIx-IndexLines
 ====================================
 
+v0.04 2010-12-15
+----------------
+
+commit 1a76d59f860f7e96a451bfaa5ce4b0ea9bc9ef10
+Author: Harley Pig <harleypig@gmail.com>
+
+    moved PPI::Document modifications into the PPIx::IndexLines package
+
 v0.03 2010-12-09
 ----------------
 

@@ -3,7 +3,7 @@ NAME
     about where in the perl document you are
 
 VERSION
-    version 0.03
+    version 0.04
 
 SYNOPSIS
       #!/usr/bin/perl

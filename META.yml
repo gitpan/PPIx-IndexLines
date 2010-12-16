@@ -29,15 +29,12 @@ no_index:
     - t
     - xt
 provides:
-  PPI::Document:
-    file: lib/PPIx/IndexLines.pm
-    version: 0.03
   PPIx::IndexLines:
     file: lib/PPIx/IndexLines.pm
-    version: 0.03
+    version: 0.04
 requires:
   PPI: 0
 resources:
   bugtracker: http://github.com/harleypigs/ppix-indexlines/issues
   repository: git://github.com/harleypig/ppix-indexlines.git
-version: 0.03
+version: 0.04

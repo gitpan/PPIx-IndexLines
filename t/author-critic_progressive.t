@@ -24,7 +24,7 @@ catch {
   plan skip_all => 'T::P::C::Progressive required for this test' if $@;
 };
 
-my $root_path = q</home/harleypig/projects/misc/PPIx-IndexLines>;
+my $root_path = q</home/harleypig/projects/lib/PPIx-IndexLines>;
 my $step_size = 0;
 my $severity  = 0;
 my $exclude   = [ qw<  > ];

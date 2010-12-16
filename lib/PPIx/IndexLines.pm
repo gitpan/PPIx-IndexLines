@@ -6,13 +6,9 @@ use strict;
 
 use PPI;
 
-our $VERSION = 0.03;  # VERSION
+our $VERSION = 0.04;  # VERSION
 
 sub new { PPI::Document->new( $_[ 1 ] ) }
-
-package PPI::Document;
-
-use strict;
 
 sub index_lines {
 
@@ -71,7 +67,7 @@ PPIx::IndexLines - Given a line number, returns some basic information about whe
 
 =head1 VERSION
 
-version 0.03
+version 0.04
 
 =head1 SYNOPSIS
 
