@@ -4,7 +4,7 @@
       "Alan Young <harleypig@gmail.com>"
    ],
    "dynamic_config" : 0,
-   "generated_by" : "Dist::Zilla version 4.102346, CPAN::Meta::Converter version 2.102400",
+   "generated_by" : "Dist::Zilla version 4.200000, CPAN::Meta::Converter version 2.102400",
    "license" : [
       "perl_5"
    ],
@@ -33,7 +33,8 @@
       },
       "runtime" : {
          "requires" : {
-            "PPI" : 0
+            "PPI" : 0,
+            "Scalar::Util" : 0
          }
       },
       "test" : {
@@ -43,7 +44,6 @@
             "File::Find" : 0,
             "File::Temp" : 0,
             "Path::Class" : 0,
-            "Scalar::Util" : 0,
             "Test::More" : "0.94",
             "Test::Perl::Critic::Progressive" : 0,
             "Try::Tiny" : 0,
@@ -54,7 +54,7 @@
    "provides" : {
       "PPIx::IndexLines" : {
          "file" : "lib/PPIx/IndexLines.pm",
-         "version" : "0.04"
+         "version" : "0.05"
       }
    },
    "release_status" : "stable",
@@ -68,6 +68,6 @@
          "web" : "http://github.com/harleypig/ppix-indexlines"
       }
    },
-   "version" : "0.04"
+   "version" : "0.05"
 }
 

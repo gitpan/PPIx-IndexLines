@@ -3,7 +3,7 @@ NAME
     about where in the perl document you are
 
 VERSION
-    version 0.04
+    version 0.05
 
 SYNOPSIS
       #!/usr/bin/perl
@@ -20,7 +20,7 @@ METHODS
     to PPI::Document::new, so the same rules as in that method apply.
 
     Basically, if you pass in a scalar, it will be assumed to be a filename
-    and said file will be loaded.
+    and said file will be loaded and parsed.
 
     Otherwise, a scalar reference is assumed to be a PPI document and will
     be parsed directly.
@@ -42,6 +42,9 @@ INSTALLATION
     modules.
 
 SEE ALSO
+    Please see those modules/websites for more information related to this
+    module.
+
     *   PPIx::IndexOffsets
 
     *   PPIx::LineToSub

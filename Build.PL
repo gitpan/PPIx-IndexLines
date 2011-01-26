@@ -13,7 +13,6 @@ my %module_build_args = (
     'File::Temp' => '0',
     'Module::Build' => '0.3601',
     'Path::Class' => '0',
-    'Scalar::Util' => '0',
     'Test::More' => '0.94',
     'Test::Perl::Critic::Progressive' => '0',
     'Try::Tiny' => '0',
@@ -28,13 +27,14 @@ my %module_build_args = (
     'Alan Young <harleypig@gmail.com>'
   ],
   'dist_name' => 'PPIx-IndexLines',
-  'dist_version' => '0.04',
+  'dist_version' => '0.05',
   'license' => 'perl',
   'module_name' => 'PPIx::IndexLines',
   'recommends' => {},
   'recursive_test_files' => 1,
   'requires' => {
-    'PPI' => '0'
+    'PPI' => '0',
+    'Scalar::Util' => '0'
   },
   'script_files' => []
 );

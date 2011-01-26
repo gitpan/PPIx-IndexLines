@@ -5,16 +5,16 @@ package PPIx::IndexLines;
 use strict;
 
 use PPI;
+use Scalar::Util 'blessed';
 
-our $VERSION = 0.04;  # VERSION
+our $VERSION = 0.05;  # VERSION
 
-sub new { PPI::Document->new( $_[ 1 ] ) }
+sub new { bless { 'document' => PPI::Document->new( $_[ 1 ] ) }, $_[ 0 ] }
 
 sub index_lines {
 
-  my $self = shift;
-
-  my @el = $self->elements;
+  my $self     = shift;
+  my $document = $self->{ 'document' };
 
   my $package = 'main';
   my $info;
@@ -36,7 +36,7 @@ sub index_lines {
 
   my $last_line_number = 0;
 
-  for my $e ( @el ) {
+  for my $e ( $document->elements ) {
 
     my $line_number = $e->line_number;
 
@@ -53,7 +53,7 @@ sub index_lines {
   }
 } ## end sub index_lines
 
-sub line_type { $_[ 0 ]->{ 'line' } || '' }
+sub line_type { $_[ 0 ]->{ 'line' }{ $_[ 1 ] } || '' }
 
 1;
 
@@ -67,7 +67,7 @@ PPIx::IndexLines - Given a line number, returns some basic information about whe
 
 =head1 VERSION
 
-version 0.04
+version 0.05
 
 =head1 SYNOPSIS
 
@@ -87,7 +87,7 @@ Accepts either a scalar or a scalar reference.  This is passed directly to
 PPI::Document::new, so the same rules as in that method apply.
 
 Basically, if you pass in a scalar, it will be assumed to be a filename and
-said file will be loaded.
+said file will be loaded and parsed.
 
 Otherwise, a scalar reference is assumed to be a PPI document and will be
 parsed directly.
@@ -111,6 +111,8 @@ or
 See perlmodinstall for information and options on installing Perl modules.
 
 =head1 SEE ALSO
+
+Please see those modules/websites for more information related to this module.
 
 =over 4
 

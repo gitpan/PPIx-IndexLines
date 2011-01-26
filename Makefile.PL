@@ -18,7 +18,6 @@ my %WriteMakefileArgs = (
     'File::Temp' => '0',
     'Module::Build' => '0.3601',
     'Path::Class' => '0',
-    'Scalar::Util' => '0',
     'Test::More' => '0.94',
     'Test::Perl::Critic::Progressive' => '0',
     'Try::Tiny' => '0',
@@ -33,9 +32,10 @@ my %WriteMakefileArgs = (
   'LICENSE' => 'perl',
   'NAME' => 'PPIx::IndexLines',
   'PREREQ_PM' => {
-    'PPI' => '0'
+    'PPI' => '0',
+    'Scalar::Util' => '0'
   },
-  'VERSION' => '0.04',
+  'VERSION' => '0.05',
   'test' => {
     'TESTS' => 't/*.t'
   }
